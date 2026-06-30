@@ -54,25 +54,5 @@ secure-file-sharing/
 ├── index.html # Portal Dashboard (Upload panel &amp; link generator)
 └── download.html # Secure Download validation page
 
-5. Installation &amp; Setup (Kali Linux / Debian)
-Step 1: Clone &amp; Navigate
-git clone https://github.com/yourusername/secure-file-sharing.git
-cd secure-file-sharing
-Step 2: Set Up a Virtual Environment
-python3 -m venv venv
-source venv/bin/activate
-Step 3: Install Dependencies
-pip install -r requirements.txt
-
-6. Automated Security Testing Suite
-The project includes an automated testing script (test_system.py) to simulate structural
-cyber attacks:
-1. Encryption Integrity: Verifies that a file uploaded is entirely unreadable in the storage/
-directory.
-2. Decryption Accuracy: Validates that the authorized download restores the file bit-for-bit
-to its original state.
-
-3. URL Tampering Defenses: Simulates an attacker modifying parameters and asserts that
-the server rejects it with a 403 Forbidden error.
 4. Expiration Enforcement: Simulates an expired timestamp to ensure the system blocks
 access immediately.
